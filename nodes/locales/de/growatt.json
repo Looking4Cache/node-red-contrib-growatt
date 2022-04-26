@@ -1,0 +1,18 @@
+{
+    "growatt" : {
+        "label" : {
+          "config": "Konfig",
+          "name": "Name",
+          "options": "Optionen",
+          "optionplantdata": "plantData: Läd die Daten zum Kraftwerk (Plant).",
+          "optiondevicedata": "deviceData: Läd die Daten zu einzelnen Geräten.",
+          "optionweather": "weather: Wetterdaten mit ausgeben.",
+          "optiontotaldata": "totalData: Läd summierte Daten seit Beginn.",
+          "optionstatusdata": "statusData: Nicht für alle Systeme verfügbar.",
+          "optiondevicetyp": "deviceTyp: Fügt den Gerätetyp der Ausgabe hinzu.",
+          "optionhistorylast": "historyLast: Läd den letzten Eintrag der Historie.",
+          "optionhistoryall": "historyAll: Läd alle verfügbaren Einträge der Historie.",
+          "optionplantid": "Auf PlantId eingrenzen"
+        }
+    }
+}

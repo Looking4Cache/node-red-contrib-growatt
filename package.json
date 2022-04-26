@@ -1,0 +1,33 @@
+{
+  "name": "node-red-contrib-growatt",
+  "version": "0.1.0",
+  "description": "Access to the Growatt API. Using the PCLHome/growatt library.",
+  "author": "Thorsten Heilmann",
+  "license": "MIT",
+  "node-red": {
+    "nodes": {
+      "growatt": "nodes/growatt.js",
+      "growatt-config": "nodes/growatt-config.js"
+    }
+  },
+  "dependencies": {
+    "growatt": "^0.2.10"
+  },
+  "main": "nodes/growatt.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Looking4Cache/node-red-contrib-growatt.git"
+  },
+  "keywords": [
+    "node-red",
+    "growatt"
+  ],
+  "bugs": {
+    "url": "https://github.com/Looking4Cache/node-red-contrib-growatt/issues"
+  },
+  "homepage": "https://github.com/Looking4Cache/node-red-contrib-growatt#readme"
+}

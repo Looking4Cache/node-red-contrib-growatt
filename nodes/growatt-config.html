@@ -1,0 +1,38 @@
+<script type="text/javascript">
+  RED.nodes.registerType('growatt-config',{
+    category: 'config',
+    color: '#5AC300',
+    defaults: {
+      name: {value:"Growatt credentials"},
+      username: {value:""}
+    },
+    credentials: {
+      password: {type:"text"}
+    },
+    inputs: 0,
+    outputs: 0,
+    outputLabels: [],
+    icon: "font-awesome/fa-mobile",
+    label: function() {
+        return this.name || "Growatt credentials";
+    }
+  });
+</script>
+
+<script type="text/html" data-template-name="growatt-config">
+  <div class="form-row">
+    <label for="node-config-input-name"><i class="fa fa-tag"></i> <span data-i18n="growatt.label.name"></span></label>
+    <input type="text" id="node-config-input-name" placeholder="Name">
+  </div>
+
+  <div class="form-row">
+    <label for="node-config-input-username"><i class="fa fa-user"></i> <span data-i18n="growatt.label.username"></span></label>
+    <input type="text" id="node-config-input-username">
+  </div>
+
+  <div class="form-row">
+    <label for="node-config-input-password"><i class="fa fa-key"></i> <span data-i18n="growatt.label.password"></span></label>
+    <input type="password" id="node-config-input-password">
+  </div>
+
+</script>

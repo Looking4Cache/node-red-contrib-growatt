@@ -1,0 +1,80 @@
+<script type="text/javascript">
+  RED.nodes.registerType('growatt',{
+    paletteLabel: 'Growatt',
+    category: 'Growatt',
+    color: '#5AC300',
+    defaults: {
+      confignode: {value:"", type:"growatt-config",required:true},
+      name: {value:""},
+      optionplantid: {value: ""},
+      optionplantdata: {value: 1},
+      optiondevicedata: {value: 1},
+      optionweather: {value: 1},
+      optiontotaldata: {value: 1},
+      optionstatusdata: {value: 1},
+      optiondevicetyp: {value: 0},
+      optionhistorylast: {value: 1},
+      optionhistoryall: {value: 0}
+    },
+    inputs: 1,
+    outputs: 1,
+    icon: "font-awesome/fa-sun-o",
+    label: function() {
+        return this.name || "Growatt";
+    }
+  });
+</script>
+
+<script type="text/html" data-template-name="growatt">
+  <div class="form-row">
+    <label for="node-input-confignode"><i class="fa fa-key"></i> <span data-i18n="growatt.label.config"></span></label>
+    <input type="text" id="node-input-confignode" placeholder="Config">
+  </div>
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="growatt.label.name"></span></label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+
+  <div class="form-row" style="margin-top: 24px;">
+    <label for="node-input-optionplantid"><i class="fa fa-bolt"></i> <span data-i18n="growatt.label.optionplantid"></span></label>
+    <input type="number" id="node-input-optionplantid" placeholder="" style="vertical-align: top;">
+  </div>
+
+  <div class="form-row">
+    <label for="node-input-verbose" style="vertical-align: top;"><i class="fa fa-database"></i> <span data-i18n="growatt.label.options"></span></label>
+    <div style="display: inline-block; position: relative; width: 70%;">
+      <div>
+        <input type="checkbox" id="node-input-optionplantdata" style="display:inline-block; width:22px; vertical-align:top; margin-bottom: 6px;">
+        <span data-i18n="growatt.label.optionplantdata"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="node-input-optiondevicedata" style="display:inline-block; width:22px; vertical-align:top; margin-bottom: 6px;">
+        <span data-i18n="growatt.label.optiondevicedata"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="node-input-optionweather" style="display:inline-block; width:22px; vertical-align:top; margin-bottom: 6px;">
+        <span data-i18n="growatt.label.optionweather"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="node-input-optiontotaldata" style="display:inline-block; width:22px; vertical-align:top; margin-bottom: 6px;">
+        <span data-i18n="growatt.label.optiontotaldata"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="node-input-optionstatusdata" style="display:inline-block; width:22px; vertical-align:top; margin-bottom: 6px;">
+        <span data-i18n="growatt.label.optionstatusdata"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="node-input-optiondevicetyp" style="display:inline-block; width:22px; vertical-align:top; margin-bottom: 6px;">
+        <span data-i18n="growatt.label.optiondevicetyp"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="node-input-optionhistorylast" style="display:inline-block; width:22px; vertical-align:top; margin-bottom: 6px;">
+        <span data-i18n="growatt.label.optionhistorylast"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="node-input-optionhistoryall" style="display:inline-block; width:22px; vertical-align:top; margin-bottom: 6px;">
+        <span data-i18n="growatt.label.optionhistoryall"></span>
+      </div>
+    </div>
+  </div>
+</script>
