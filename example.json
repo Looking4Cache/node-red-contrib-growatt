@@ -1,0 +1,95 @@
+[
+    {
+        "id": "d2bdd973700e1a16",
+        "type": "tab",
+        "label": "Growatt",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c605592220209999",
+        "type": "growatt",
+        "z": "d2bdd973700e1a16",
+        "confignode": "92c47ea9.241958",
+        "name": "",
+        "optionplantid": "",
+        "optionplantdata": 1,
+        "optiondevicedata": 1,
+        "optionweather": false,
+        "optiontotaldata": 1,
+        "optionstatusdata": 1,
+        "optiondevicetyp": 0,
+        "optionhistorylast": false,
+        "optionhistoryall": 0,
+        "x": 320,
+        "y": 60,
+        "wires": [
+            [
+                "ae0582764926d02e"
+            ]
+        ]
+    },
+    {
+        "id": "0a8e9dc8f5523e2e",
+        "type": "inject",
+        "z": "d2bdd973700e1a16",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [
+                "c605592220209999"
+            ]
+        ]
+    },
+    {
+        "id": "ae0582764926d02e",
+        "type": "debug",
+        "z": "d2bdd973700e1a16",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "dc09e8c3fafdebf4",
+        "type": "comment",
+        "z": "d2bdd973700e1a16",
+        "name": "Set username and passwort in the 'Growatt credentials'",
+        "info": "",
+        "x": 260,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "92c47ea9.241958",
+        "type": "growatt-config",
+        "name": "Growatt credentials",
+        "username": "",
+        "credentials": {}
+    }
+]
