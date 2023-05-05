@@ -11,7 +11,7 @@
     }
   },
   "dependencies": {
-    "growatt": "^0.2.10"
+    "growatt": "^0.4.1"
   },
   "main": "nodes/growatt.js",
   "devDependencies": {},
