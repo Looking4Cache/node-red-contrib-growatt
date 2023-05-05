@@ -29,5 +29,8 @@ If you have issues with the underlaying growatt API library: https://github.com/
 
 ## Version History
 
+Version 1.1.0:
+- Update growatt dependency to 0.4.1
+
 Version 1.0.0:
 - Initial release
