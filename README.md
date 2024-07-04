@@ -34,6 +34,9 @@ If you have issues with the underlaying growatt API library: https://github.com/
 
 ## Version History
 
+Version 1.1.2:
+- Update growatt dependency to 0.7.4 (fixes login error)
+
 Version 1.1.1:
 - Deprecated Info
 
