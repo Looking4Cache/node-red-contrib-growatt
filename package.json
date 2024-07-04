@@ -11,10 +11,9 @@
     }
   },
   "dependencies": {
-    "growatt": "^0.4.1"
+    "growatt": "^0.7.4"
   },
   "main": "nodes/growatt.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
